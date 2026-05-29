@@ -9,4 +9,9 @@ describe('A gyökér útvonal tesztelése', () => {
             .expect('Hello')
             .end(done)
     })
+    it('GET /', () => {
+        return request(app)
+            .get('/')
+            .expect('Hello')
+    })
 })
